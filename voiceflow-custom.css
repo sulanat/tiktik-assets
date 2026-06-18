@@ -1,0 +1,197 @@
+/* ============================================
+   TikTik — Voiceflow Widget Custom CSS
+   Shadow DOM inject via assistant.stylesheet
+   ============================================ */
+
+/* --- Google Font: Inter --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+/* --- CSS Değişkenleri (JS tarafından override edilir) --- */
+:host {
+  --tiktik-primary: #5B4A7A;
+  --tiktik-primary-dark: #3D3054;
+  --tiktik-primary-light: #7A6499;
+  --tiktik-font: 'Inter', system-ui, sans-serif;
+}
+
+/* ============================================
+   GENEL / TİPOGRAFİ
+   ============================================ */
+
+* {
+  font-family: var(--tiktik-font) !important;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: -0.01em;
+}
+
+/* ============================================
+   HEADER
+   ============================================ */
+
+.vfrc-header {
+  background: var(--tiktik-primary) !important;
+  border-bottom: 1px solid var(--tiktik-primary-dark) !important;
+  padding: 14px 16px !important;
+}
+
+.vfrc-header--title {
+  font-family: var(--tiktik-font) !important;
+  font-weight: 600 !important;
+  font-size: 15px !important;
+  letter-spacing: -0.02em !important;
+  color: #ffffff !important;
+}
+
+.vfrc-header--description {
+  color: rgba(255,255,255,0.65) !important;
+  font-size: 12px !important;
+}
+
+/* Avatar dairesi */
+.vfrc-header .vfrc-avatar {
+  background: var(--tiktik-primary-dark) !important;
+  border: 1.5px solid rgba(255,255,255,0.2) !important;
+}
+
+/* Yenile ikonu */
+.vfrc-header--button svg path {
+  fill: rgba(255,255,255,0.7) !important;
+}
+
+.vfrc-header--button:hover svg path {
+  fill: #ffffff !important;
+}
+
+/* ============================================
+   BAŞLANGIÇ EKRANI (Welcome screen)
+   ============================================ */
+
+.vfrc-widget--launcher-container,
+.vfrc-launcher {
+  background: #ffffff !important;
+}
+
+/* Büyük avatar */
+.vfrc-launcher .vfrc-avatar,
+.vfrc-widget .vfrc-avatar--large {
+  background: var(--tiktik-primary) !important;
+  border: none !important;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15) !important;
+}
+
+/* "Start new chat" butonu */
+.vfrc-chat-button,
+.vfrc-button--action {
+  background: var(--tiktik-primary) !important;
+  border: none !important;
+  border-radius: 12px !important;
+  font-family: var(--tiktik-font) !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  letter-spacing: -0.01em !important;
+  color: #ffffff !important;
+  transition: background 0.2s ease, transform 0.1s ease !important;
+}
+
+.vfrc-chat-button:hover,
+.vfrc-button--action:hover {
+  background: var(--tiktik-primary-dark) !important;
+  transform: translateY(-1px) !important;
+}
+
+/* ============================================
+   CHAT ALANI
+   ============================================ */
+
+.vfrc-chat {
+  background: #f9f9f9 !important;
+}
+
+/* AI mesaj balonu */
+.vfrc-message--ai .vfrc-message--content,
+.vfrc-message.vfrc-message--assistant .vfrc-message--content {
+  background: #ffffff !important;
+  border: 1px solid #ebebeb !important;
+  border-radius: 4px 16px 16px 16px !important;
+  color: #1a1a1a !important;
+  font-size: 14px !important;
+  line-height: 1.6 !important;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06) !important;
+  padding: 12px 14px !important;
+}
+
+/* Kullanıcı mesaj balonu */
+.vfrc-message--user .vfrc-message--content,
+.vfrc-message.vfrc-message--human .vfrc-message--content {
+  background: var(--tiktik-primary) !important;
+  border-radius: 16px 4px 16px 16px !important;
+  color: #ffffff !important;
+  font-size: 14px !important;
+  line-height: 1.6 !important;
+  padding: 12px 14px !important;
+  border: none !important;
+}
+
+/* ============================================
+   INPUT ALANI
+   ============================================ */
+
+.vfrc-chat-input {
+  background: #ffffff !important;
+  border-top: 1px solid #ebebeb !important;
+  padding: 12px 14px !important;
+}
+
+.vfrc-chat-input textarea,
+.vfrc-chat-input input {
+  font-family: var(--tiktik-font) !important;
+  font-size: 14px !important;
+  color: #1a1a1a !important;
+  background: #f4f4f4 !important;
+  border: 1.5px solid transparent !important;
+  border-radius: 12px !important;
+  padding: 10px 14px !important;
+  transition: border-color 0.2s ease !important;
+}
+
+.vfrc-chat-input textarea:focus,
+.vfrc-chat-input input:focus {
+  border-color: var(--tiktik-primary-light) !important;
+  background: #ffffff !important;
+  outline: none !important;
+}
+
+.vfrc-chat-input textarea::placeholder,
+.vfrc-chat-input input::placeholder {
+  color: #aaaaaa !important;
+}
+
+/* Gönder butonu */
+.vfrc-chat-input__send-icon,
+.vfrc-chat-input [type="submit"] {
+  background: var(--tiktik-primary) !important;
+  border-radius: 10px !important;
+  transition: background 0.2s ease !important;
+}
+
+.vfrc-chat-input__send-icon:hover {
+  background: var(--tiktik-primary-dark) !important;
+}
+
+.vfrc-chat-input__send-icon svg path {
+  fill: #ffffff !important;
+}
+
+/* ============================================
+   POWERED BY VOICEFLOW
+   ============================================ */
+
+.vfrc-footer {
+  padding: 6px 0 8px !important;
+  opacity: 0.45 !important;
+  transition: opacity 0.2s ease !important;
+}
+
+.vfrc-footer:hover {
+  opacity: 0.75 !important;
+}
