@@ -163,7 +163,7 @@
 
 .vfrc-chat-input textarea::placeholder,
 .vfrc-chat-input input::placeholder {
-  color: #aaaaaa !important;
+  color: ##888888 !important;
 }
 
 /* Gönder butonu */
