@@ -164,6 +164,7 @@
 .vfrc-chat-input textarea::placeholder,
 .vfrc-chat-input input::placeholder {
   color: #888888 !important;
+   opacity: 1 !important;
 }
 
 /* Gönder butonu */
