@@ -87,7 +87,7 @@
   border-radius: 12px !important;
   font-family: var(--tiktik-font) !important;
   font-weight: 600 !important;
-  font-size: var(--tiktik-font-size) !important;
+  font-size: 14px !important;
   letter-spacing: -0.01em !important;
   color: #ffffff !important;
   transition: background 0.2s ease, transform 0.1s ease !important;
@@ -114,7 +114,7 @@
   border: 1px solid #ebebeb !important;
   border-radius: 4px 16px 16px 16px !important;
   color: #1a1a1a !important;
-  font-size: var(--tiktik-font-size) !important;
+  font-size: 14px !important;
   line-height: 1.6 !important;
   box-shadow: 0 1px 4px rgba(0,0,0,0.06) !important;
   padding: 12px 14px !important;
@@ -126,7 +126,7 @@
   background: var(--tiktik-primary) !important;
   border-radius: 16px 4px 16px 16px !important;
   color: #ffffff !important;
-  font-size: var(--tiktik-font-size) !important;
+  font-size: 14px !important;
   line-height: 1.6 !important;
   padding: 12px 14px !important;
   border: none !important;
@@ -145,7 +145,7 @@
 .vfrc-chat-input textarea,
 .vfrc-chat-input input {
   font-family: var(--tiktik-font) !important;
-  font-size: var(--tiktik-font-size) !important;
+  font-size: 14px !important;
   color: #1a1a1a !important;
   background: #f4f4f4 !important;
   border: 1.5px solid transparent !important;
