@@ -108,23 +108,21 @@
 }
 
 /* AI mesaj balonu */
-.vfrc-message--ai .vfrc-message--content,
-.vfrc-message.vfrc-message--assistant .vfrc-message--content {
+.vfrc-system-response .vfrc-message {
   background: var(--tiktik-primary) !important;
-  border: none !important;
-  border-radius: 4px 16px 16px 16px !important;
   color: #ffffff !important;
+  border-radius: 4px 16px 16px 16px !important;
   font-size: 16px !important;
   line-height: 1.6 !important;
   padding: 12px 14px !important;
+  display: inline-block !important;
 }
 
 /* Kullanıcı mesaj balonu */
-.vfrc-message--user .vfrc-message--content,
-.vfrc-message.vfrc-message--human .vfrc-message--content {
+.vfrc-user-response > div {
   background: var(--tiktik-primary) !important;
-  border-radius: 16px 4px 16px 16px !important;
   color: #ffffff !important;
+  border-radius: 16px 4px 16px 16px !important;
   font-size: 16px !important;
   line-height: 1.6 !important;
   padding: 12px 14px !important;
