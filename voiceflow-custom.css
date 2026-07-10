@@ -110,14 +110,12 @@
 /* AI mesaj balonu */
 .vfrc-message--ai .vfrc-message--content,
 .vfrc-message.vfrc-message--assistant .vfrc-message--content {
-  background: #ffffff !important;
-  border: 1px solid #ebebeb !important;
-  border-left: 3px solid var(--tiktik-primary) !important;
+  background: var(--tiktik-primary) !important;
+  border: none !important;
   border-radius: 4px 16px 16px 16px !important;
-  color: #1a1a1a !important;
+  color: #ffffff !important;
   font-size: 16px !important;
   line-height: 1.6 !important;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.06) !important;
   padding: 12px 14px !important;
 }
 
